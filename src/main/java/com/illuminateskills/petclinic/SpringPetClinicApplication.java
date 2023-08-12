@@ -1,4 +1,4 @@
-package com.illuminateskills.spring.devops_automation.api;
+package com.illuminateskills.petclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
