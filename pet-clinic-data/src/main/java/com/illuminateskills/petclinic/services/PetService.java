@@ -4,11 +4,8 @@ import com.illuminateskills.petclinic.model.Pet;
 import java.util.Set;
 
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long>{
 
     Pet findByLastName(String lastName);
 
-    Pet save(Pet owner);
-
-    Set<Pet> findAll();
     }
