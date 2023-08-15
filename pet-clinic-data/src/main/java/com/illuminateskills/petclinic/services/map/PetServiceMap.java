@@ -4,8 +4,9 @@ import java.util.Set;
 
 import com.illuminateskills.petclinic.model.Pet;
 import com.illuminateskills.petclinic.services.CrudService;
+import com.illuminateskills.petclinic.services.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long>  implements CrudService<Pet, Long>{
+public class PetServiceMap extends AbstractMapService<Pet,Long>  implements PetService {
 
 	@Override
 	public Pet save(Pet object) {
