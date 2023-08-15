@@ -3,17 +3,14 @@ package com.illuminateskills.petclinic.services.map;
 import java.util.Set;
 
 import com.illuminateskills.petclinic.model.Owner;
-import com.illuminateskills.petclinic.services.CrudService;
 import com.illuminateskills.petclinic.services.OwnerService;
-import org.springframework.stereotype.Service;
 
-@Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService<Owner, Long> {
 
 	@Override
 	public Owner save(Owner object) {
 		// TODO Auto-generated method stub
-		return super.save(object.getId(), object);
+		return super.save(object);
 	}
 
 	@Override
@@ -28,11 +25,11 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 		return super.findById(id);
 	}
 
-	@Override
-	public Owner save(Long id, Owner object) {
+/*	@Override
+	public Owner save(Owner object) {
 		// TODO Auto-generated method stub
-		return super.save(id, object);
-	}
+		return super.save(object);
+	}*/
 
 	@Override
 	public void deleteById(Long id) {
